@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>train ticket booking</title>
+</head>
+<body>
+    <h1 align="center" style="color: rgb(14, 11, 201);">Search Train</h1>
+    <hr>
+    <table cellpadding="80px">
+    <tr>
+    <th><a href="loginForm.html">Login</a> </th>
+    <th> <a href="registrationForm.html">Registration</a> </th>
+    <!-- <th><a href="ticketBokking.html">Ticket Bokking</a></th> -->
+    <th><a href="yoursTicketLists">Your Ticket Lists</a></th>
+</tr>
+</table>
+    <br>
+    <form action="ticketBokking.html" method="get">
+        
+        <div><label for="fromStation"><b>From * </b></label>
+            <input type="text" name="fromStation" id="fromStation" placeholder="Enter From Station" required
+             autofocus list="fromStations"> <br><br>
+        <datalist id="fromStations">
+            <option value="CHE">Chennai Station</option>
+            <option value="MDU"><b>Madurai Station</b></option>
+            <option value="CGL"><b>Cengalpattu Station</b></option>
+            <option value="SA"><b>Salem Station</b></option>
+            <option value="MUM"><b>Mumbai Station</b></option>
+        </datalist>
+
+        </div>
+        <div><label for="toStation"><b>To *  </b></label>
+            <input type="text" name="toStation" id="toStation" placeholder="Enter To station" required
+            autofocus list="toStations"> 
+            <datalist id="toStations">
+                <option value="CHE"><b>Chennai Station</b></option>
+                <option value="MDU"><b>Madurai Station</b></option>
+                <option value="CGL"><b>Cengalpattu Station</b></option>
+                <option value="SA"><b>Salem Station</b></option>
+                <option value="MUM"><b>Mumbai Station</b></option>
+            </datalist>
+    
+            <br> <br>
+        </div>
+        <div><label for="departureDate"><b>Departure Date* : </b></label>
+            <input type="date" name="departureDate" id="departureDate" value="2021-10-21" min="2021-10-21" max="2022-03-21" > <br><br>
+        </div>
+        <div><button type="submit">Submit</button><br><br>
+            <button type="reset">Reset</button>
+        </div>
+
+    </form>
+    
+</body>
+</html>
